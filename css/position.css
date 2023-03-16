@@ -1,0 +1,49 @@
+body {
+    display: block;
+    position: relative;
+}
+
+header {
+    display: block;
+    position: relative;
+}
+
+header > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.Settings {
+    display: flex;
+    justify-content: start;
+    position: relative;
+}
+
+.Calendar {
+    display: block;
+    position: relative;
+}
+
+.CalendarHeader {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.CalendarMain {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    position: relative;
+}
+
+.CalendarMain > div {
+    display: block;
+    position: relative;
+}
+
+.CalendarMain > div > button {
+    display: block;
+    position: relative;
+}

@@ -1,0 +1,117 @@
+* {
+    outline: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-family: sao;
+    color: #28f;
+}
+
+
+
+body {
+    background-image: url(../assets/img/bg.gif);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: #0000;
+}
+
+pre {
+    font-size: 25px;
+}
+
+
+
+header {
+    height: 50px;
+    background-color: #28f2;
+    border-bottom: 1px #28f solid;
+}
+
+header > div {
+    height: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+header svg {
+    width: 30px;
+    height: 30px;
+    fill: #148;
+}
+
+header svg:hover {
+    fill: #28f;
+}
+
+.Settings > button {
+    margin: 0 10px;
+}
+
+
+
+.Calendar {
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+.CalendarHeader {
+    height: 30px;
+}
+
+.CalendarHeader > div {
+    height: 100%;
+    width: 100%;
+    background-color: #28f2;
+}
+
+.CalendarHeader button {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    color: #28f;
+    border: 1px #0000 solid;
+}
+
+.CalendarHeader button:hover {
+    border-color: #28f;
+    background-color: #28f4;
+}
+
+.CalendarMain > div {
+    overflow: auto;
+    height: 300px;
+    background-color: #28f2;
+    border: 1px #28f4 solid;
+}
+
+.CalendarMain > div::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.CalendarMain > div:hover {
+    border-color: #28f;
+}
+
+.CalendarMain button {
+    height: 35px;
+    width: 100%;
+    background-color: #28f2;
+    border: 1px #0000 solid;
+}
+
+.CalendarMain button:hover {
+    border-color: #28f;
+}

@@ -1,0 +1,10 @@
+*.txt
+*.out
+*.c
+*.o
+start*
+test*
+index*
+!index.php
+!index.html
+/index.html
