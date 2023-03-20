@@ -1,17 +1,18 @@
 * {
     outline: none;
-    border: none;
     margin: 0;
     padding: 0;
-    font-family: sao;
+    border: none;
     color: #28f;
+    font-family: sao;
+}
+
+*::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
 
 
-
-body {
-    background-image: url(../assets/img/bg.gif);
-}
 
 a {
     text-decoration: none;
@@ -22,40 +23,71 @@ li {
 }
 
 button {
-    cursor: pointer;
     background-color: #0000;
-}
-
-pre {
-    font-size: 25px;
+    cursor: pointer;
 }
 
 
+
+body {
+    background-image: url(../assets/img/bg.gif);
+}
 
 header {
-    height: 50px;
     background-color: #28f2;
     border-bottom: 1px #28f solid;
 }
 
-header > div {
-    height: 100%;
-    max-width: 2000px;
+footer {
+    background-color: #082030;
+    border-top: 1px #28f solid;
+    width: 100%;
+    bottom: 0px;
+}
+
+
+
+.Schedulertoolbar {
+    max-width: 2500px;
     margin: 0 auto;
 }
 
-header svg {
+.Schedulertoolbar svg {
     width: 30px;
     height: 30px;
+    padding: 15px 20px;
     fill: #148;
 }
 
-header svg:hover {
+.Schedulertoolbar svg:hover {
     fill: #28f;
 }
 
-.Settings > button {
-    margin: 0 10px;
+.Schedulertoolbar > div:last-child svg {
+    fill: #28f;
+}
+
+.Schedulertoolbar p {
+    font-size: 25px;
+    margin: 0 20px 0 0;
+}
+
+.Schedulertoolbar pre {
+    font-size: 25px;
+    margin: 0 20px;
+}
+
+.Schedulertoolbar button:hover {
+    background-color: #28f2;
+}
+
+.Schedulertoolbar > div:nth-child(2) {
+    overflow: auto;
+}
+
+.Schedulertoolbar > div:nth-child(2)::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
 
 
@@ -66,52 +98,93 @@ header svg:hover {
 }
 
 .CalendarHeader {
-    height: 30px;
-}
-
-.CalendarHeader > div {
-    height: 100%;
     width: 100%;
-    background-color: #28f2;
+    background-color: #082040;
+    top: 0;
 }
 
 .CalendarHeader button {
-    box-sizing: border-box;
     width: 100%;
     height: 100%;
     font-size: 25px;
-    color: #28f;
-    border: 1px #0000 solid;
+    padding-top: 5px;
+    border: 1px #148 solid;
 }
 
 .CalendarHeader button:hover {
-    border-color: #28f;
-    background-color: #28f4;
-}
-
-.CalendarMain > div {
-    overflow: auto;
-    height: 300px;
-    background-color: #28f2;
-    border: 1px #28f4 solid;
-}
-
-.CalendarMain > div::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-}
-
-.CalendarMain > div:hover {
+    background-color: #148;
     border-color: #28f;
 }
 
-.CalendarMain button {
-    height: 35px;
+.CalendarBody {
     width: 100%;
-    background-color: #28f2;
-    border: 1px #0000 solid;
 }
 
-.CalendarMain button:hover {
+.CalendarBodyDay {
+    overflow: hidden;
+    background-color: #28f2;
+    border: 1px #148 solid;
+    height: 200px;
+}
+
+.CalendarBodyDay:hover {
+    border-color: #28f;
+}
+
+.CalendarBodyDay pre {
+    font-size: 20px;
+    margin-top: 3px;
+}
+
+.CalendarBodyDayHeader {
+    cursor: pointer;
+    width: 100%;
+    background-color: #0b3060;
+}
+
+.CalendarBodyDayHeader:hover {
+    background-color: #148;
+}
+
+.CalendarBodyDayBody pre {
+    margin-left: 5px;
+}
+
+.CalendarBodyDayBody button {
+    width: 100%;
+    border: 1px #28f2 solid;
+}
+
+.CalendarBodyDayBody button:hover {
+    background-color: #28f2;
+    border-color: #28f;
+}
+
+
+
+.Entriestoolbar {
+    max-width: 2500px;
+    margin: 0 auto;
+}
+
+.Entriestoolbar svg {
+    width: 50px;
+    height: 50;
+    fill: #148;
+    padding: 10px 15px;
+}
+
+.Entriestoolbar svg:hover {
+    fill: #28f;
+}
+
+.Entriestoolbar button {
+    width: fit-content;
+    background-color: #28f2;
+    border: 1px #148 solid;
+    margin: 15px;
+}
+
+.Entriestoolbar button:hover {
     border-color: #28f;
 }

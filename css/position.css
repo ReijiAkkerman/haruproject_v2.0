@@ -1,25 +1,58 @@
-body {
+button {
     display: block;
     position: relative;
 }
+
+pre {
+    display: block;
+    position: relative;
+}
+
+
 
 header {
     display: block;
     position: relative;
 }
 
-header > div {
+footer {
+    display: block;
+    position: fixed;
+    z-index: 2;
+}
+
+.Schedulertoolbar {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.Schedulertoolbar > div:first-child {
+    display: flex;
+    justify-content: start;
+    position: relative;
+}
+
+.Schedulertoolbar > div:last-child {
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+
+.Schedulertoolbar > div:last-child > button {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
 }
 
-.Settings {
+.Schedulertoolbar > div:nth-child(2) {
     display: flex;
-    justify-content: start;
+    align-items: center;
     position: relative;
 }
+
+
 
 .Calendar {
     display: block;
@@ -28,22 +61,46 @@ header > div {
 
 .CalendarHeader {
     display: flex;
-    justify-content: space-around;
-    position: relative;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 2;
 }
 
-.CalendarMain {
+.CalendarBody {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(7, 1fr);
     position: relative;
 }
 
-.CalendarMain > div {
+.CalendarBodyDay {
     display: block;
     position: relative;
 }
 
-.CalendarMain > div > button {
+.CalendarBodyDayHeader {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.CalendarBodyDayBody {
     display: block;
+    position: relative;
+}
+
+.CalendarBodyDayBody button {
+    z-index: 1;
+}
+
+
+
+.Entriestoolbar {
+    display: block;
+    position: relative;
+}
+
+.Entriestoolbar button {
+    display: block;
+    float: left;
     position: relative;
 }
