@@ -104,3 +104,43 @@ footer {
     float: left;
     position: relative;
 }
+
+
+
+.Common {
+    display: block;
+    position: relative;
+}
+
+.CommonHeader {
+    display: block;
+    position: relative;
+}
+
+.CommonEntry {
+    display: block;
+    position: relative;
+}
+
+
+
+.Enter {
+    display: fixed;
+    position: absolute;
+}
+
+.Enter form {
+    display: block;
+    position: relative;
+}
+
+.Enter div {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.Enter button {
+    display: block;
+    position: relative;
+}

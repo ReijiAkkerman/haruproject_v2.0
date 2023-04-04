@@ -1,14 +1,17 @@
 <?php
-    // spl_autoload_register(function ($classname) {
-    //     include 'app/core/' . $classname . '.php';
-    // });
+    declare(strict_types=1);
 
-    $path = explode('/', $_SERVER['REQUEST_URI']);
-    switch($path[1]) {
-        case '':
-            include "index2.html";
-            break;
-        case 'var':
-            include "app/view/scheduler.php";
-            break;
-    }
+    spl_autoload_register(function($class) {
+        $classname = explode('\\', $class);
+        include 'app/core/' . end($classname) . '.php';
+    });
+
+    spl_autoload_register(function($class) {     // подгружает необходимые для реализации интерфейсы
+        $classname = explode('\\', $class);
+        include 'app/core/abstract/' . end($classname) . '.php';
+    });
+
+    // include "app/core/Router.php";
+
+    $router = new Routing\Router();
+    $router->getPage();
